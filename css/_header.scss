@@ -1,0 +1,13 @@
+header {
+    color:$text_header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    p {
+        margin-top: 2vh;
+    }
+}

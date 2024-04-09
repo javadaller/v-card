@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Silkscreen';
+	src:url('../assets/fonts/Silkscreen-Regular.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:url('../assets/fonts/RobotoMono-Regular.ttf') format('truetype')
+}
+
+body {
+    font-family: 'Roboto', cursive;
+}
+
+#arnaudweb, #role, header {
+    font-family: 'Silkscreen', cursive;
+}

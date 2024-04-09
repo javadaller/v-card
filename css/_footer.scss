@@ -1,0 +1,14 @@
+footer {
+    width:100%;
+    background-color: $background_footer;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+    font-size: 0.8em;
+}
+
+a:link {
+    color:$text;
+}

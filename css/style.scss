@@ -1,0 +1,19 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "main";
+
+body {
+    height:100vh;
+}
+header {
+    height:10vh;
+}
+main {
+    height:85vh;
+}
+footer {
+    height:5vh;
+}
