@@ -1,12 +1,14 @@
 @import "reset";
 @import "colors";
 @import "fonts";
+@import "animations";
 @import "header";
 @import "footer";
 @import "main";
 
 body {
     height:100vh;
+    overflow: hidden;
 }
 header {
     height:10vh;

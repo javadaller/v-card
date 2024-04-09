@@ -74,6 +74,30 @@ body {
   font-family: "Silkscreen", cursive;
 }
 
+.fadeIn {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInVideo {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 header {
   color: rgb(228, 228, 228);
   display: flex;
@@ -84,6 +108,10 @@ header {
 
 header p {
   margin-top: 2vh;
+}
+
+#title {
+  font-size: 5vw;
 }
 
 footer {
@@ -110,6 +138,63 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.vcard {
+  color: rgb(228, 228, 228);
+}
+
+aside {
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 62% 83% 77% 56%/82% 82% 51% 49%;
+}
+
+article {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 62% 83% 77% 56%/82% 82% 51% 49%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+figure {
+  width: 15vw;
+  height: 15vw;
+}
+figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  filter: contrast(150%);
 }
 
 #card {
@@ -228,6 +313,7 @@ main {
 
 body {
   height: 100vh;
+  overflow: hidden;
 }
 
 header {

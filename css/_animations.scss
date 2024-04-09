@@ -1,0 +1,26 @@
+.fadeIn {  
+    animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+    0% {
+        //filter: blur(4px);
+        opacity:0;
+    }
+    100% {
+        //filter: blur(0);
+        opacity:1;
+    }
+}
+.fadeInVideo {  
+    animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+    0% {
+        //filter: blur(4px);
+        opacity:0;
+    }
+    100% {
+        //filter: blur(0);
+        opacity:0.2;
+    }
+}
