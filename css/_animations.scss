@@ -1,26 +1,52 @@
 .fadeIn {  
-    animation: fadeIn 1s linear;
-}
-@keyframes fadeIn {
-    0% {
-        //filter: blur(4px);
-        opacity:0;
-    }
-    100% {
-        //filter: blur(0);
-        opacity:1;
+    animation: fadeIn 2.5s linear;
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
 .fadeInVideo {  
-    animation: fadeIn 1s linear;
-}
-@keyframes fadeIn {
-    0% {
-        //filter: blur(4px);
-        opacity:0;
+    animation: fadeInVideo 1s linear;
+
+    @keyframes fadeInVideo {
+        0% {
+            //filter: blur(4px);
+            opacity:0;
+        }
+        100% {
+            //filter: blur(0);
+            opacity:0.2;
+        }
     }
-    100% {
-        //filter: blur(0);
-        opacity:0.2;
+}
+
+.titleMove {  
+    animation: titleMove 2s linear;
+
+    @keyframes titleMove {
+        0% {
+            transform: translateY(-500px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
+
+.becodeMove {  
+    animation: becodeMove 3s linear;
+
+    @keyframes becodeMove {
+        0% {
+            transform: translateX(2500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
     }
 }

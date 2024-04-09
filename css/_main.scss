@@ -24,7 +24,7 @@ main {
     color:$text_main;
 }
 
-aside {
+#portrait {
     position: absolute;
     top:15vh;
     left:10vw;
@@ -38,7 +38,7 @@ aside {
     border-radius:62% 83% 77% 56% / 82% 82% 51% 49% ;
 }
 
-article {
+#contact {
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -46,6 +46,32 @@ article {
     align-items: center;
     background-color: $background_text;
     border-radius:62% 83% 77% 56% / 82% 82% 51% 49% ;
+}
+
+#website {
+    position: absolute;
+    bottom:15vh;
+    right:10vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background_text;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+#social {
+    position: absolute;
+    top:20vh;
+    right:10vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background_text;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 ul {

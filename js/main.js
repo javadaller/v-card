@@ -1,7 +1,3 @@
-/// INIT ////////////////////////
-const vcard=document.querySelectorAll('.vcard');
-vcard.forEach((element) => element.style.display='none');
-
 /// SLEEP FUNCTION /////////////
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -88,14 +84,17 @@ function getRotationAngleY(element) {
 /// ON CLICK ////////////////////////////
 
 const intro=document.querySelectorAll('.intro');
+const vcard=document.querySelectorAll('.vcard');
+vcard.forEach((element) => element.style.display='none');
 
 card.addEventListener('click', async function() {
     if (!isDragging) {
         intro.forEach((element) => element.style.display='none');
-        vcard.forEach((element) => fadeIn(element));
         vcard.forEach((element) => element.style.display='flex');
-        await sleep(2000);
-        vcard.forEach((element) => element.classList.remove('fadeIn'));
+        vcard.forEach((element) => fadeIn(element));
+        document.querySelector('#title').classList.add('titleMove');
+        document.querySelector('#becode').classList.add('becodeMove');
+        
     }
 });
 
@@ -106,8 +105,6 @@ function fadeIn(element) {
         element.classList.add('fadeInVideo');
     }
 }
-
-/// Random move /////////////////////////////////////
 
 
 
